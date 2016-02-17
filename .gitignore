@@ -1,4 +1,8 @@
+.bundle
 .DS_Store
+Gemfile.lock
 *.orig
 .dotest
 .rvmrc
+*.gem
+tags

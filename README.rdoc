@@ -1,3 +1,5 @@
+{<img src="https://travis-ci.org/Shopify/asset_cloud.png?branch=master" alt="Build Status" />}[https://travis-ci.org/Shopify/asset_cloud]
+
 = AssetCloud
 
 An abstraction layer around arbitrary and diverse asset stores.
@@ -6,12 +8,16 @@ An abstraction layer around arbitrary and diverse asset stores.
 
 === as a Gem
 
-    gem install Shopify-asset_cloud -s http://gems.github.com
+    gem install asset_cloud
 
-=== as a Rails plugin
+== Testing
 
-    script/plugin install git://github.com/Shopify/asset_cloud.git
+   bundle exec rake spec
+
+With S3 Remote test:
+
+    AWS_ACCESS_KEY_ID="<s3_key>" AWS_SECRET_ACCESS_KEY="<s3_secret_key>" S3_BUCKET_NAME="<bucket_name>" bundle exec rake spec
 
 == Copyright
 
-Copyright (c) 2008-2009 Tobias Lütke & Jaded Pixel, Inc. Released under the MIT license (see LICENSE for details).
+Copyright (c) 2008-2014 Tobias Lütke & Shopify, Inc. Released under the MIT license (see LICENSE for details).
